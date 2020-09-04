@@ -1,0 +1,13 @@
+{% extends 'porfolio/base.html' %}
+
+{% block body_block %}
+<div class="centerstage loader">
+
+  <div class="post" style="border: 2em solid rgba(20,20,20,0);">
+
+      <h1 class="posttitle loader">{{ project.title }}</h1>
+      <p class='postcontent'>{{ project.text }}</p>
+      <a class="btn btn-primary" style="margin:auto;" href="{{project.link}}">view source code</a>
+  </div>
+</div>
+{% endblock %}

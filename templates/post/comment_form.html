@@ -1,0 +1,16 @@
+{% extends 'porfolio/base.html' %}
+{%block body_block %}
+  <h1>New comment</h1>
+  <form method="POST" class="post-form">
+  {% csrf_token %}
+  {{form.as_p}}
+  <button type="submit" class="save btn btn-default">Post Comment</button>
+  </form>
+  <br><br><br><br><br><br><br><br>
+  <div style="text-align:center;">
+    <h4 style="color:silver;">Thank You for your comment!</h4>
+    <p style="color:red;">*Your comment will appear under the post after the site admin approved it.</p>
+  </div>
+
+  <script>var editor = new MediumEditor('.editable');</script>
+{%endblock%}

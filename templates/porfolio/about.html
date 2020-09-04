@@ -1,0 +1,28 @@
+{% extends 'porfolio/base.html' %}
+{%load static%}
+{%block body_block%}
+  <div class="row" style="margin:1em auto;">
+      <img class="col-lg-6 col-md-12 img-responsive" id="pp" src='{% static "img/profilepic.jpg"%}'
+      style="margin-top:1em;" alt="">
+    <div class="col-lg-6 col-md-12" style="margin-top:1em;">
+        <h1 class="aboutme">About me</h1>
+      	<br>
+      	<p class="aboutme">Hi, my name is <i>Wehkawng Zahkung Shiengkat</i>, and I am a programmer.
+          My favorite programming languaga is <b>Python Programing Language </b>
+          and I am trying to improve my skills by learning through practicing.
+          Currently, I am improving my skills as a fullstack on building web application with python(django).</p>
+          <a class="btn btn-primary" style="margin:auto;" href="https://drive.google.com/file/d/1vZ3CROa_urihElXZf7QRKWzokIruUfB-/view?usp=sharing">View Resume</a>
+          <br><br>
+      	<p class="aboutme">Thanks for visiting my porfolio blog! Check all the cool stuffs from my projects
+          and fell free to check me out on Facebook <a href="https://www.facebook.com/wehkawng.zahkung">
+            <i>@Wehkawng Zahkung Shiengkat</i></a>!</p>
+      	<br>
+    </div>
+  </div>
+  <div class="loader" style="padding:2.5em;">
+    <h3 class="posttitle" style="color:blue;">Objective</h3>
+    <p class="postcontent" style="color:blue;">"To work in a competitive world, enhancing my skills and talents, to develop my personality
+      and strength, and to improve my weaknesses for as much better individual."</p>
+  </div>
+
+{%endblock%}

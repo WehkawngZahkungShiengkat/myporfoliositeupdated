@@ -1,0 +1,11 @@
+{% extends 'porfolio/base.html' %}
+{%block body_block %}
+  <div style="margin:1em 1em 1em 1em;">
+    <form action="" method="post">
+      {%csrf_token%}
+      <p>Are you sure you want to delete "{{ object }}"?</p>
+        <input class='btn btn-danger' type="submit" value="Confirm" />
+      </form>
+    </form>
+  </div>
+{%endblock%}
